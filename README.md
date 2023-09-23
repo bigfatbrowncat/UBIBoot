@@ -9,5 +9,5 @@ Adopted for **neobox** by Ilya Mizus <bigfatbrowncat@gmail.com>
 
 ## Changes in the **neobox** version
 
-1. Quite mode enabled for the kernel (avoinding console showing on the screen)
+1. Quite mode enabled for the kernel (avoidding console being shown on the screen)
 2. Cursor initially disabled
