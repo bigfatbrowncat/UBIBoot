@@ -37,6 +37,7 @@ enum {
 	PARAM_ROOTTYPE,
 	PARAM_ROOTWAIT,
 	PARAM_LOGO,
+    PARAM_QUIET,
 	/* Arguments for user space (init and later). */
 	PARAM_SEPARATOR,
 	PARAM_HWVARIANT,
@@ -59,6 +60,7 @@ static char *kernel_params[] = {
 	[PARAM_ROOTTYPE] = "",
 	[PARAM_ROOTWAIT] = "rootwait",
 	[PARAM_LOGO] = "",
+    [PARAM_QUIET] = "quiet",
 	[PARAM_SEPARATOR] = "--",
 	[PARAM_HWVARIANT] = "hwvariant=" VARIANT,
 	[PARAM_KERNEL_BAK] = "",
