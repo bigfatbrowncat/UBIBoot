@@ -38,6 +38,7 @@ enum {
 	PARAM_ROOTWAIT,
 	PARAM_LOGO,
     PARAM_QUIET,
+    PARAM_NOCURSOR,
 	/* Arguments for user space (init and later). */
 	PARAM_SEPARATOR,
 	PARAM_HWVARIANT,
@@ -61,6 +62,7 @@ static char *kernel_params[] = {
 	[PARAM_ROOTWAIT] = "rootwait",
 	[PARAM_LOGO] = "",
     [PARAM_QUIET] = "quiet",
+    [PARAM_NOCURSOR] = "vt.global_cursor_default=0",
 	[PARAM_SEPARATOR] = "--",
 	[PARAM_HWVARIANT] = "hwvariant=" VARIANT,
 	[PARAM_KERNEL_BAK] = "",
