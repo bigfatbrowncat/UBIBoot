@@ -64,7 +64,7 @@ static char *kernel_params[] = {
 	[PARAM_ROOTWAIT] = "rootwait",
 	[PARAM_LOGO] = "",
 	[PARAM_VIDEO] = "video=DPI-1:320x240",
-	[PARAM_QUIET] = "quiet",
+	[PARAM_QUIET] = "loglevel=7", //"quiet",
 	[PARAM_NOCURSOR_1] = "vt.global_cursor_default=0",
 	[PARAM_NOCURSOR_2] = "vt.cur_default=1",
 	[PARAM_SEPARATOR] = "--",
