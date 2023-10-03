@@ -7,6 +7,10 @@
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
 
+extern unsigned long __stack_chk_guard;
+void __stack_chk_guard_setup(void);
+void __stack_chk_fail(void);
+
 int strncmp(const char *s1, const char *s2, size_t n);
 
 void *memcpy(void *dest, const void *src, size_t n);

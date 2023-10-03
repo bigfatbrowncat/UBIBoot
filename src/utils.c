@@ -2,6 +2,17 @@
 #include "jz.h"
 #include "utils.h"
 
+unsigned long __attribute__((used)) __stack_chk_guard;
+void __attribute__((used)) __stack_chk_guard_setup(void)
+{
+    __stack_chk_guard = 0xBAAAAAAD; //provide some magic numbers
+}
+
+void __attribute__((used)) __stack_chk_fail(void)
+{
+	/* Can do nothing as we are in a bootloader */
+}
+
 int strncmp(const char *s1, const char *s2, size_t n)
 {
 	while (n--) {
